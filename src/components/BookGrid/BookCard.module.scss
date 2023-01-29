@@ -1,0 +1,9 @@
+.books {
+	display: flex;
+	flex-wrap: wrap;
+	width: 25%;
+	margin: 0.5rem;
+	img {
+		width: 100%;
+	}
+}

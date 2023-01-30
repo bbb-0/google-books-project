@@ -1,15 +1,12 @@
-import { useState } from 'react';
-import './App.css';
-import reactLogo from './assets/react.svg';
-import Books from './Components/BookGrid/Books';
+import { useEffect, useState } from 'react';
 import Header from './components/Header/Header';
-import Searchbar from './components/SearchBar/SearchBar';
+import BookList from './container/BookList';
 
 function App() {
 	return (
 		<>
 			<Header />
-			<Books />
+			<BookList />
 		</>
 	);
 }

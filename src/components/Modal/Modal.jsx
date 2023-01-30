@@ -1,3 +1,5 @@
+import styles from './Modal.module.scss';
+
 const Modal = ({ show, item, onClose }) => {
 	if (!show) {
 		return null;

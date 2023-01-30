@@ -1,9 +1,28 @@
 .books {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	gap: 20px;
+	box-sizing: border-box;
+	justify-content: center;
+	align-items: center;
+	margin: 0.2rem;
+	border: 2px solid rgb(255, 0, 0);
+	img {
+		width: 10em;
+		display: block;
+	}
+	&__search {
+		display: flex;
+		outline: 0;
+		height: 20px;
+		flex-direction: column;
+	}
+}
+
+.bookCard {
 	display: flex;
 	flex-wrap: wrap;
-	width: 25%;
-	margin: 0.5rem;
-	img {
-		width: 100%;
-	}
+	align-items: center;
+	margin: 0.3rem;
+	border: 2px solid black;
 }

@@ -16,9 +16,9 @@ Page should include the following:
 -   A grid of books
     Instructions:
 
--   When the submit button is clicked you need the request books from the Google books API using the input value as your query string
+-   When the submit button is clicked you need the request books from the Google books API using the input value as your query string xxx
 -   The books that you receive should be rendered in the books grid.
--   Each book in the grid should have an image, author, title and description
+-   Each book in the grid should have an image, author, title and description xxx
 -   The grid should be responsive on different screen sizes
 -   You should use async / await for your request code, NOT .then
 

@@ -1,19 +1,19 @@
-import BookList from '../../container/BookList';
-import styles from './BookCard.module.scss';
+import BookList from "../../container/BookList";
+import styles from "./BookCard.module.scss";
 
-const BookCard = () => {
-	return (
-		<div className={styles.BookList}>
-			<h2>{bookData.volumeInfo.title}</h2>
-			<h3>{bookData.volumeInfo.authors}</h3>
-			{bookData.volumeInfo.imageLinks && (
-				<img
-					src={bookData.volumeInfo.imageLinks.thumbnail}
-					alt={bookData.volumeInfo.title}
-				/>
-			)}
-		</div>
-	);
+const BookCard = ({ bookData }) => {
+    return (
+        <div className={styles.BookList}>
+            <h2>{bookData.volumeInfo.title}</h2>
+            <h3>{bookData.volumeInfo.authors}</h3>
+            {bookData.volumeInfo.imageLinks && (
+                <img
+                    src={bookData.volumeInfo.imageLinks.thumbnail}
+                    alt={bookData.volumeInfo.title}
+                />
+            )}
+        </div>
+    );
 };
 
 export default BookCard;

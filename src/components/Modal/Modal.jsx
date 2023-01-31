@@ -8,14 +8,14 @@ const Modal = ({ show, item, onClose }) => {
 		item.volumeInfo.imageLinks && item.volumeInfo.imageLinks.smallThumbnail;
 	return (
 		<>
-			<div className="overlay">
-				<div className="overlay-inner">
-					<button className="close" onClick={onClose}>
+			<div className={styles.modal}>
+				<div className={styles.modal__inner}>
+					<button className={styles.modal__close} onClick={onClose}>
 						Close
 					</button>
-					<div className="inner-box">
+					<div className={styles.modal__box}>
 						<img src={thumbnail} alt="" />
-						<div className="info">
+						<div className={styles.info}>
 							<h1>{item.volumeInfo.title}</h1>
 							<h3>{item.volumeInfo.authors}</h3>
 							<h4>
@@ -25,7 +25,7 @@ const Modal = ({ show, item, onClose }) => {
 							<br />
 						</div>
 					</div>
-					<h4 className="description">{item.volumeInfo.description}</h4>
+					<h4 className={styles.description}>{item.volumeInfo.description}</h4>
 				</div>
 			</div>
 		</>

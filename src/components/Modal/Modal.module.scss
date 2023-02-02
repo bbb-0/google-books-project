@@ -11,7 +11,7 @@
 	align-items: center;
 	justify-content: center;
 }
-.overlay__inner {
+.modal__inner {
 	background: white;
 	width: 700px;
 	height: 550px;
@@ -20,7 +20,7 @@
 	box-sizing: border-box;
 	overflow: hidden;
 	font-size: 1.3rem;
-	.close {
+	&__close {
 		position: absolute;
 		top: 1rem;
 		right: 1rem;
@@ -29,7 +29,7 @@
 		font-size: 17px;
 		background-color: transparent;
 	}
-	.inner-box {
+	&__box {
 		margin-top: 30px;
 		display: flex;
 		justify-content: center;

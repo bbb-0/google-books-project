@@ -37,16 +37,26 @@ const BookList = () => {
 	}, [search]);
 
 	return (
-		<div className={styles.books}>
-			<input
-				className={styles.books__search}
-				placeholder="Search for a book"
-				type="text"
-				onChange={(e) => setSearch(e.target.value)}
-			/>
-			<button className={styles.button} onClick={() => setSearch('')}>
-				Clear
-			</button>
+		<div className={styles.search}>
+			<form className={styles.search__form} onSubmit={handleSearch}>
+				<input
+					className={styles.search__input}
+					placeholder="Search for a book"
+					type="text"
+					value={search}
+					onChange={(e) => setSearch(e.target.value)}
+				/>
+				<button className={styles.search__button} type="submit">
+					🔍
+				</button>
+				<button
+					className={styles.search__button}
+					type="button"
+					onClick={() => setSearch('')}
+				>
+					Clear
+				</button>
+			</form>
 			<div className={styles.container}>
 				{books.map((book) => (
 					<BookCard key={book.id} bookData={book} />

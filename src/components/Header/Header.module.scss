@@ -1,7 +1,15 @@
+* {
+	overflow-x: hidden;
+	margin: 0;
+}
+
 .Header {
+	font-family: Google Sans, Roboto, Arial, sans-serif;
 	display: flex;
+	height: 20vh;
 	justify-content: center;
 	align-items: center;
-	margin-top: 1em;
-	border: 1px solid black;
+	color: whitesmoke;
+	background-image: linear-gradient(90deg, #74ebd5 0%, #9face6 100%);
+	background-size: cover;
 }
